@@ -79,12 +79,6 @@ function showQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-    // for (let i = 0; i < currentQuestion.answers.length; i++) {
-    //     let button = document.createElement('button');
-    //     button.classList.add('btn');
-    //     button.innerHTML = currentQuestion.answers[i]['text'];
-    //     answerButtonsElement.appendChild(button);
-    // }
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement('button');
         button.classList.add('btn');
